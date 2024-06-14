@@ -36,6 +36,7 @@
 
         display: flex;
       }
+     
     </style>
   </head>
   <body>
@@ -64,8 +65,12 @@
       <tr>
         <th>Gender:</th>
         <td>
-          <input type="radio" value="Male" /> Male<br />
-          <input type="radio" value="Female" />Female<br />
+          <input type="radio" id="sex" name="Gender" value="Male">
+         <label for="sex">Male</label><br>
+        </td>
+        <td>
+           <input type="radio" id="sex" name="Gender" value="Female">
+           <label for="sex">Female</label><br>
         </td>
       </tr>
       <tr>
@@ -110,14 +115,20 @@
           Telugu
         </td>
       </tr>
-
+      <tr>
+      <th>
       <td>
         <input type="checkbox" />
         <pre>Here by I declare all given details are true</pre>
       </td>
+    </tr>
+    <tr>
+    <th>
       <td>
-        <p>Log in to <a href="https://ethnus.com/">Ethnus</a> website</p>
+        <p style="text-align: right;">Log in to <a href="https://ethnus.com/">Ethnus</a> website</p>
       </td>
+      </th>
+    </tr>
     </table>
 
     <button>Register</button>
