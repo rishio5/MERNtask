@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+    <style>
+      body {
+        background-color: rgb(135, 3, 51);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .label {
+        margin-top: 30px;
+        width: 200px;
+        display: inline-block;
+        margin-left: 150px;
+      }
+
+      .label label {
+        color: white;
+      }
+      .input1 {
+        width: 300px;
+        display: inline-block;
+      }
+      input {
+        height: 15px;
+      }
+
+      textarea {
+        margin-top: 20px;
+        height: 40px;
+      }
+      .container {
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-top: 100px;
+      }
+      .btn {
+        margin-top: -10px;
+        margin-left: 120px;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+      }
+      .btn button {
+        width: 400px;
+        height: 30px;
+        border-radius: 4px;
+        text-decoration: solid;
+        font-size: medium;
+      }
+
+      .btn:hover button {
+        background-color: grey;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="background-color: rgb(101, 8, 50)">
+      <div class="row">
+        <div class="label"><label for="name">Name:</label></div>
+        <div class="input1"><input type="text" placeholder="your name" /></div>
+      </div>
+      <div class="row">
+        <div class="label"><label for="email">Email:</label></div>
+        <div class="input1">
+          <input type="email" placeholder="your email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="label"><label for="password">Password:</label></div>
+        <div class="input1"><input type="password" /></div>
+      </div>
+      <div class="row">
+        <div class="label"><label for="phone">Phone Number:</label></div>
+        <div class="input1"><input type="tel" /></div>
+      </div>
+      <div class="row">
+        <div class="label"><label for="gender">Gender:</label></div>
+        <div class="input1" style="color: white">
+          Male:<input type="radio" name="gender" /> Female:<input
+            type="radio"
+            name="gender"
+          />
+          Other:<input type="radio" name="gender" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="label"><label for="language">Language:</label></div>
+        <div class="input1">
+          <select name="language" id="">
+            <option value="selectlan">Select language</option>
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="telugu">Telugu</option>
+            <option value="tamil">Tamil</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label"><label for="zip">Zip Code:</label></div>
+        <div class="input1"><input name="zip" type="tel" /></div>
+      </div>
+      <div class="row">
+        <div class="label"><label for="about">About:</label></div>
+        <div class="input1">
+          <textarea
+            name="about"
+            placeholder="Write about yourself"
+            id=""
+          ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="btn"><button>Register</button></div>
+      </div>
+    </div>
+  </body>
+</html>

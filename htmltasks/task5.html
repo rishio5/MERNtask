@@ -7,14 +7,9 @@
     <style>
       table,
       tr,
-      th {
+      td {
         border: 1px solid black;
         border-collapse: collapse;
-      }
-      table,
-      tr,
-      th,
-      td {
         margin-left: auto;
         margin-right: auto;
       }
@@ -22,75 +17,108 @@
         color: blue;
         text-align: center;
       }
-      td,
-      input {
-        width: 98%;
-        height: 98%;
-        border: 1px solid black;
-        border-radius: 3px;
-        display: flex;
-      }
-      button {
-        margin-left: auto;
-        margin-right: auto;
 
+      button {
         display: flex;
+        margin: auto;
+        margin-top: 1rem;
+        border-radius: 0.2rem;
+        padding: 0.3rem;
+        border: 1px solid gray;
+        background-color: rgb(238, 232, 232);
       }
-     
+      label {
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        text-align: right;
+      }
     </style>
   </head>
   <body>
     <table>
       <h1>Registration form</h1>
       <tr>
-        <th>First Name</th>
-        <td><input type="text" /></td>
+        <td><label>First Name</label></td>
+        <td><input type="text" size="52rem" /></td>
       </tr>
       <tr>
-        <th>Last Name</th>
-        <td><input type="text" /></td>
+        <td><label>Last Name</label></td>
+        <td><input type="text" size="52rem" /></td>
       </tr>
       <tr>
-        <th>Email</th>
-        <td><input type="text" /></td>
-      </tr>
-      <tr>
-        <th>Password</th>
-        <td><input type="password" /></td>
-      </tr>
-      <tr>
-        <th>Re-enter Password</th>
-        <td><input type="password" /></td>
-      </tr>
-      <tr>
-        <th>Gender:</th>
         <td>
-          <input type="radio" id="sex" name="Gender" value="Male">
-         <label for="sex">Male</label><br>
+          <label>Email</label>
         </td>
         <td>
-           <input type="radio" id="sex" name="Gender" value="Female">
-           <label for="sex">Female</label><br>
+          <input type="Email" name="t1" size="52rem" />
         </td>
       </tr>
       <tr>
-        <th>Age:</th>
-        <td><input type="text" /></td>
+        <td>
+          <label>Password</label>
+        </td>
+        <td>
+          <input type="Password" name="t1" size="52rem" />
+        </td>
       </tr>
       <tr>
-        <th>Phone Number</th>
-        <td><input type="text" /></td>
+        <td>
+          <label>Re-Enter-Password</label>
+        </td>
+        <td>
+          <input type="Password" name="t1" size="52rem" />
+        </td>
       </tr>
       <tr>
-        <th>Address</th>
-        <td><input type="text" id="add" /></td>
+        <td><label>Gender:</label></td>
+        <td>
+          <input type="radio" id="sex" value="Male" />male
+          <br />
+          <input type="radio" id="sex" value="Female" />Female
+        </td>
       </tr>
       <tr>
-        <th>State</th>
-        <td><input type="text" /></td>
+        <td>
+          <label>Age:</label>
+        </td>
+        <td>
+          <input type="text" name="t1" size="52rem" />
+        </td>
       </tr>
       <tr>
-        <th>Country</th>
+        <td>
+          <label>Phone Number</label>
+        </td>
+        <td>
+          <input type="text" name="t1" size="52rem" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Address</label>
+        </td>
+        <td class="add" colspan="2">
+          <textarea
+            type="address"
+            name="a1"
+            style="height: 75px; width: 375px"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>State</label>
+        </td>
+        <td>
+          <input type="text" name="t1" size="52rem" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Country</label>
+        </td>
         <td>
           <select>
             <option value="choose your country" selected>
@@ -102,7 +130,9 @@
         </td>
       </tr>
       <tr>
-        <th>Languages known</th>
+        <td>
+          <label>Languages Known</label>
+        </td>
 
         <td>
           <input type="checkbox" value="english" />
@@ -116,19 +146,24 @@
         </td>
       </tr>
       <tr>
-      <th>
-      <td>
-        <input type="checkbox" />
-        <pre>Here by I declare all given details are true</pre>
-      </td>
-    </tr>
-    <tr>
-    <th>
-      <td>
-        <p style="text-align: right;">Log in to <a href="https://ethnus.com/">Ethnus</a> website</p>
-      </td>
-      </th>
-    </tr>
+        <th>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" checked />Hereby I declare all the given
+              details are true
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p style="height: 10px">
+                Log in to
+                <a href="">Ethnus</a>
+                website
+              </p>
+            </td>
+          </tr>
+        </th>
+      </tr>
     </table>
 
     <button>Register</button>
