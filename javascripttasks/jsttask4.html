@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        background-color: skyblue;
+      }
+      .content {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+        position: relative;
+
+        gap: 10%;
+      }
+      button {
+        padding: 5px;
+        height: 5vh;
+        border-radius: 10px;
+        border: 1px solid black;
+        font-size: 20px;
+        background-color: limegreen;
+        color: black;
+      }
+
+      .timeinfo,
+      .dateinfo {
+        font-size: 4vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Show Date & Time</h1>
+    <div class="content">
+      <div class="datec">
+        <button id="date">Show Date</button>
+        <div class="dateinfo">Click Buuton</div>
+      </div>
+      <div class="timec">
+        <button id="time">Show Time</button>
+        <div class="timeinfo">Click Button</div>
+      </div>
+    </div>
+
+    <script>
+      const date = document.getElementById("date");
+      const time = document.getElementById("time");
+      const dateinfo = document.querySelector(".dateinfo");
+      const timeinfo = document.querySelector(".timeinfo");
+      date.addEventListener("click", () => {
+        dateinfo.innerHTML = new Date().toLocaleDateString();
+      });
+      time.addEventListener("click", () => {
+        timeinfo.innerHTML = new Date().toLocaleTimeString();
+      });
+    </script>
+  </body>
+</html>

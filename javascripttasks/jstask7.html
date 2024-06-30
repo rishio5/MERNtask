@@ -1,0 +1,46 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* css to provide background */
+      body {
+        background-image: url("./background.jpeg");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- html tag -->
+    <h1>We are coding a moving train</h1>
+    <!-- to display an image -->
+    <input type="button" value="start" onclick="start()" />
+    <input type="button" value="stop" onclick="stop()" />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <img src="./train.png" alt="error" id="mytrain" />
+
+    <script>
+      // to move my train
+      var animation;
+      function init() {
+        let mycar = document.getElementById("mytrain");
+        mycar.style.position = "absolute";
+        mycar.style.left = "0px";
+      }
+      window.onload = init;
+
+      function start() {
+        let mycar = document.getElementById("mytrain");
+        mycar.style.left = parseInt(mycar.style.left) + 10 + "px";
+        animation = setTimeout(start, 50);
+      }
+      function stop() {
+        let mycar = document.getElementById("mytrain");
+        clearTimeout(animation);
+        mycar.style.left = "paused";
+      }
+    </script>
+  </body>
+</html>
